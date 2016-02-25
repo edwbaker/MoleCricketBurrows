@@ -8,7 +8,7 @@
 \usepackage{lscape}
 \usepackage{graphicx}
 \usepackage{tikz}
-\graphicspath{{images/}}
+\graphicspath{{images/},{data/}}
 \addbibresource{refs.bib}
 \pagestyle{fancy}
 \lhead{EWB5}
@@ -488,6 +488,8 @@
    \paragraph{}
    Since the eccentricity of an ellipse is independent of its orientation, we must specify the orientation of the ellipse relative to the burrow. This is easiest achieved by specifying the direction of the major axis (length, width, height).
    
+   \paragraph{}
+   The eccentricity of a burrow is a measure of shape, rather than size, so accounts for size between the burrows of individuals of varying size within a single species.
       
    \subsection{Calculation of eccentricity}
    The calculation path here is used as measuring the length of the major axis (L) and minor axis (l) is straightforward for a burrow. The major axis is the longest measurement of opening length or opening width, with the other measurement becoming the minor axis (FIG). The calculation of the distance between the centre of the ellipse and one of the foci is calculated as follows.
@@ -600,7 +602,14 @@
    The horn eccentricity of these (assumed conspecific) casts were calculated as $0.72\pm0.14$ in the length direction. It can be seen from Table ~\ref{tab:horn_eccentricity} that the only species that overlaps in horn opening shape is \textit{Gryllotalpa vineae}. Further comparisons are given in Table ~\ref{tab:id_nhm_casts}.
    
    \paragraph{}
-   It can be seen there is close agreement between the three more recent specimens and the Bennett-Clark specimen confirmed to be \textit{vineae}. Given that only a single confirmed specimen of \textit{vineae} for comparison, it is likely that the three newer casts fall within the normal bacoustic burrow range of that species. They appear distinct from other species of \textit{Gryllotalpa} on factors including number of horns and horn opening eccentricity. As shown by Bennet-Clark the shape of the exit tunnel has little effect on the burrow acoustics, so there is less evolutionary pressure to maintain a uniform shape ofthis section between burrows. In addition the species varies from the NHM \textit{G. gryllotalpa} cast by its regular and smooth structure.
+   It can be seen (Figure ~\ref{fig:radar_eccentricity})  there is close agreement between the three more recent specimens and the Bennett-Clark specimen confirmed to be \textit{vineae}. Given that only a single confirmed specimen of \textit{vineae} for comparison, it is likely that the three newer casts fall within the normal bacoustic burrow range of that species. They appear distinct from other species of \textit{Gryllotalpa} on factors including number of horns and horn opening eccentricity. As shown by Bennet-Clark the shape of the exit tunnel has little effect on the burrow acoustics, so there is less evolutionary pressure to maintain a uniform shape ofthis section between burrows. In addition the species varies from the NHM \textit{G. gryllotalpa} cast by its regular and smooth structure.
+   
+      \begin{figure}[h]
+      	\includegraphics[width=\textwidth]{radar_eccentricity}
+      	\caption{Radar plot of eccentricity measurements of mole cricket burrows. Eccentricities along the anterior-posterior axis are given positive values, those orthogonal to it are given negative values.}
+      	\label{fig:radar_eccentricity}
+      \end{figure}
+      
    
    \subsection{\textit{Gryllotalpa gryllotalpa}: highly variable?}
    There is a striking difference between the cast of this species donated by Bennett-Clark to the NHM and the Iranian specimens examined by \cite{jafari2015}. This species is known to have multiple races across Europe, and it is possible that acoustic burrow structure also varies considerably across this range.
@@ -638,5 +647,8 @@
    Information on the soil type is of importance.
    \section{Fractal dimension analysis}
    Yah2
+   
+   \section{Acknowledgements}
+   Thanks to George Beccaloni and Judith Marshall (Natural History Museum, London).
    \printbibliography{}
 \end{document}
